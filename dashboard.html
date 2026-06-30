@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Currency Converter</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Crypto Currency Converter</h1>
+        <p id="welcomeUser"></p>
+    </header>
+
+    <!-- Main Card -->
+    <div class="container">
+
+        <div class="card">
+
+            <!-- Crypto Selection -->
+            <div class="form-group">
+                <label for="crypto">Select Cryptocurrency</label>
+
+                <select id="crypto">
+
+                    <option value="bitcoin">Bitcoin (BTC)</option>
+
+                    <option value="ethereum">Ethereum (ETH)</option>
+
+                    <option value="litecoin">Litecoin (LTC)</option>
+
+                    <option value="dogecoin">Dogecoin (DOGE)</option>
+
+                </select>
+
+            </div>
+
+            <!-- Currency Selection -->
+            <div class="form-group">
+
+                <label for="currency">Convert To</label>
+
+                <select id="currency">
+
+                    <option value="usd">USD ($)</option>
+
+                    <option value="inr">INR (₹)</option>
+
+                    <option value="eur">EUR (€)</option>
+
+                    <option value="gbp">GBP (£)</option>
+
+                </select>
+
+            </div>
+
+            <!-- Amount -->
+            <div class="form-group">
+
+                <label for="amount">Enter Amount</label>
+
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="Enter Amount"
+                    min="1"
+                >
+
+            </div>
+
+            <!-- Buttons -->
+
+            <button id="convertBtn">
+                Convert
+            </button>
+
+            <button id="saveBtn">
+                Save Favorite
+            </button>
+
+        </div>
+
+        <!-- Result Card -->
+
+        <div class="result-card">
+
+            <h2>Current Price</h2>
+
+            <p id="currentPrice">
+                --
+            </p>
+
+            <h2>Converted Amount</h2>
+
+            <p id="convertedAmount">
+                --
+            </p>
+
+        </div>
+
+        <!-- Favorites -->
+
+        <div class="favorites">
+
+            <h2>Favorite Pairs</h2>
+
+            <ul id="favoritesList">
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>
