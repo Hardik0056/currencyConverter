@@ -150,3 +150,21 @@ button:hover {
     }
 
 }
+.deleteBtn {
+
+    margin-left: 15px;
+    padding: 5px 10px;
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+
+}
+
+.deleteBtn:hover{
+
+    background: darkred;
+
+}
